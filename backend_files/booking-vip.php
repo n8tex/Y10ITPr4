@@ -173,5 +173,6 @@
         <div class="backButton">
             <button onclick="goBack()" class="btn btn-danger">Cancel</button>
         </div>
+        <p>(c) N8te 2017</p>
     </div>
 </div>
