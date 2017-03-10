@@ -78,10 +78,10 @@
     
     //Submit to database function
     function submitToDatabase($submitFirstName, $submitLastName, $submitEmail) {
-        $servername = "";
-        $username = "";
-        $password = "";
-        $dbname = "";
+        $servername = "localhost:8889";
+        $username = "root";
+        $password = "root";
+        $dbname = "bookings";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -106,7 +106,7 @@
     }
     
     //Checks for the number of tickets in the VIP database
-    $con=mysqli_connect("","","","");
+    $con=mysqli_connect("localhost:8889","root","root","bookings");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -173,6 +173,5 @@
         <div class="backButton">
             <button onclick="goBack()" class="btn btn-danger">Cancel</button>
         </div>
-        <p>(c) N8te 2017</p>
     </div>
 </div>
