@@ -17,9 +17,6 @@
             text-align: center
         }
         
-        iframe{
-            overflow:hidden;
-        }
     </style>
 </head>
 <body>
@@ -78,10 +75,10 @@
     
     //Submit to database function
     function submitToDatabase($submitFirstName, $submitLastName, $submitEmail) {
-        $servername = "localhost:8889";
-        $username = "root";
-        $password = "root";
-        $dbname = "bookings";
+        $servername = "";
+        $username = "";
+        $password = "";
+        $dbname = "";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -106,7 +103,7 @@
     }
     
     //Checks for the number of tickets in the VIP database
-    $con=mysqli_connect("localhost:8889","root","root","bookings");
+    $con=mysqli_connect("","","","");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
