@@ -102,7 +102,7 @@
     }
     
     //Checks for the number of tickets in the Standard database
-    $con=mysqli_connect("localhost:8889","root","root","bookings");
+    $con=mysqli_connect("","","","");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
