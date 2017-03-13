@@ -22,9 +22,13 @@
     $econSeats = 20;
     $standardSeats = 30;
     $vipSeats = 15;
+    $location = "";
+    $username = "";
+    $password = "";
+    $database = "";
     
     //Checks for the amount of Discounted Tickets sold
-    $con=mysqli_connect("","","","");
+    $con=mysqli_connect($location,$username,$password,$database);
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -42,7 +46,7 @@
     mysqli_close($con);
     
     //Checks for the amount of Standard Tickets sold
-    $con=mysqli_connect("","","","");
+    $con=mysqli_connect($location,$username,$password,$database);
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -60,7 +64,7 @@
     mysqli_close($con);
     
     //Checks for the amount of VIP Tickets sold
-    $con=mysqli_connect("","","","");
+    $con=mysqli_connect($location,$username,$password,$database);
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
