@@ -6,7 +6,7 @@
 
 <?php
 $servername = "";
-$username = "root";
+$username = "";
 $password = "";
 $dbname = "";
 
@@ -16,7 +16,7 @@ if (isset($_GET['run'])) {
 
 function submit() {
 $servername = "";
-$username = "root";
+$username = "";
 $password = "";
 $dbname = "";
         // Create connection
@@ -26,7 +26,7 @@ $dbname = "";
             die("Connection failed: " . $conn->connect_error);
         } 
 
-        $sql = "INSERT INTO blank (firstname, lastname, email)
+        $sql = "INSERT INTO VIP (firstname, lastname, email)
         VALUES ('John', 'Smith', 'john@example.com')";
         
         if ($conn->query($sql) === TRUE) {

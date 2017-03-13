@@ -1,6 +1,6 @@
 <!Doctype HTML>
 <head>
-
+//This project was to test whether I can edit a specific row of data. Unfortunately, I had to stop it as I did not have enough time.
 </head>
 <body>
 <?php
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, firstname, lastname FROM blank";
+$sql = "SELECT id, firstname, lastname FROM Discounted";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
