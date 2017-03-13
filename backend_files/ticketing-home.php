@@ -24,7 +24,7 @@
     $vipSeats = 15;
     
     //Checks for the amount of Discounted Tickets sold
-    $con=mysqli_connect("location","username","password","database");
+    $con=mysqli_connect("","","","");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -42,7 +42,7 @@
     mysqli_close($con);
     
     //Checks for the amount of Standard Tickets sold
-    $con=mysqli_connect("location","username","password","database");
+    $con=mysqli_connect("","","","");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -60,7 +60,7 @@
     mysqli_close($con);
     
     //Checks for the amount of VIP Tickets sold
-    $con=mysqli_connect("location","username","password","database");
+    $con=mysqli_connect("","","","");
     // Check connection
     if (mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -129,6 +129,5 @@
             </div>
         </div>
     </div>
-    <p>(c) N8te 2017</p>
 </div>
 </body>
